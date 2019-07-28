@@ -9,7 +9,17 @@
     <h1>JavaScript Variables</h1>
 
     <script>
-// your code goes here!
+    	var birthYear = parseInt(prompt("What year were you born in?"));
+    	var luckyNumber = parseInt(prompt("What's your lucky number?"));
+    	var favFruit = "Watermelon";
+    	var favSubject = "PE";
+    	document.write("Question 1: " + (birthYear%luckyNumber).toString() + "\n");
+    	document.write("Question 2: " + (birthYear+luckyNumber).toString() + "\n");
+    	document.write("Question 3: " + (birthYear+favSubject).toString() + "\n");
+    	document.write("Question 4: " + (favFruit + birthYear + luckyNumber).toString() + "\n");
+    	document.write("Question 5: " + (birthYear + luckyNumber + favSubject).toString() + "\n");
+  
+
     </script>
 </body>
 

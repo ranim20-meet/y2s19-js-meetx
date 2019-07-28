@@ -9,7 +9,11 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
-// your code goes here
+    	MEETfav = prompt("Give me 3 things you like about MEET. Please seperate them by a coma and a space");
+    	MEETfav = MEETfav.split(", ");
+    	MEETfav = MEETfav.sort();
+    	MEETfav = MEETfav.join(", ")
+    	document.write(MEETfav)
     </script>
 </body>
 

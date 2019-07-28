@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hover</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$("#colorChangeBTN").click(function(){
+			$("h1").css("color", "red");
+		});
+	});
+	</script>
+
+
+</head>
+<body>
+	<h1>Popup Example</h1>
+	<div class="tooltip">Hover for a surprise!
+	  <span class="tooltiptext">Surprise!</span>
+	</div>
+	<button id = "colorChangeBTN">Click Me!</button>
+</body>
+</html>

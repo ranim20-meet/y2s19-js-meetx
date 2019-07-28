@@ -16,8 +16,23 @@ function getRandomInt(min, max) {
 
 var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
+		guessCount = 0
+		guess = -3
 
-// your code goes under here
+		while (guess != randomInt){
+			guess = parseInt(prompt("Guess the number!"));
+
+			if (guess < randomInt){
+				alert("Too low! Try again!");
+				guessCount++;
+
+			} else if (guess > randomInt){
+				alert("Too high! try again!");
+				guessCount++;
+			};
+
+		};
+		alert("Correct! It took you " + guessCount.toString() + " guesses.");
 
     </script>
 </body>

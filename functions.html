@@ -9,13 +9,35 @@
     <h1>isPalindrome Function</h1>
 
     <script>
-/* Checks if a character is a letter */
-function isLetter(char) {
-    char = char.toLowerCase();
-    return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
-}
+		/* Checks if a character is a letter */
+		function isLetter(char) {
+		    char = char.toLowerCase();
+		    return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
+		}
 
-// Write your isPalindrome function here!
+			function isPalindrome(word) {
+				word.toLowerCase();
+				wordList = word.split("");
+				console.log(wordList);
+				for (i=0; i<word.length-1; i++){
+					console.log("word list at i: " + wordList[i]);
+					if (!isLetter(wordList[i])){
+						wordList.splice(i, 1);
+					};
+				};
+				console.log(wordList);
+				return wordList.join("");
+				//for ( i=0; i<=(parseInt(word.length/2)); i++){
+				//	if (word.charAt(i) != word.charAt(-i)){
+				//			return false;
+				//		};
+				//	};
+				
+				//return true;
+			};
+		var word = prompt("Palindromes are fun!");
+		document.write(isPalindrome(word));
+
 
     </script>
 </body>
